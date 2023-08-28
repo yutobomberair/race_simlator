@@ -439,15 +439,13 @@ class gui_app(QWidget):
     def sim_transition(self):
         self.start_sim()
         self.start_video()
-        self.screen_transition()
-        # image = QtGui.QImage('./gui_parts/waiting.png')
-        # self.screen_transition(image)
+        image = QtGui.QImage('./gui_parts/waiting.png')
+        self.screen_transition(image)
     
     def restart(self):
         self.start_video()
-        self.screen_transition()
-        # image = QtGui.QImage('./gui_parts/waiting.png')
-        # self.screen_transition(image)
+        image = QtGui.QImage('./gui_parts/waiting.png')
+        self.screen_transition(image)
 
     def read_paramfile(self):
         namebox = [self.namebox1, self.namebox2, self.namebox3, self.namebox4, self.namebox5, self.namebox6
