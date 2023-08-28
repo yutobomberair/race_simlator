@@ -484,3 +484,4 @@ if __name__ == '__main__':
     
     main_window.show() #ウィンドウの表示
     sys.exit(app.exec_()) #ループ表示
+    print("panic brothers")
